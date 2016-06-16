@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<style type="text/css">
+.wrap {width: 85%; margin: auto; overflow: hidden;}
+.left {float: right; height: 510px; width: 49%; background: pink;}
+.right {float: left; height: 250px; margin-bottom: 10px; width: 49%;}
+.right.top {background: green;}
+.right.bot {background: red;}
+@media all and (max-width: 400px) {
+    .left, .right {float: none; margin-bottom: 5px; height: 200px;}
+}
+</style>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Adaptive layout</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="right top"></div>
+        <div class="left"></div>
+        <div class="right bot"></div>
+    </div>
+</body>
+</html>
